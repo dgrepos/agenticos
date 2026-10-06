@@ -1,0 +1,15 @@
+# Entries that must NEVER be promoted to the AgenticOS template by scripts/sync-memory.sh.
+#
+# One substring per line; any memory entry containing it is skipped. Blank lines and
+# lines starting with # are ignored.
+#
+# Use this for knowledge that is real and durable but scoped to THIS repo. The template is
+# inherited by every repo you later create from it, so repo-specific traps there are
+# noise that costs every future session tokens to read past.
+#
+# Without this file the sync would re-add anything deleted upstream on the very next run,
+# because it decides what to send by diffing against the template.
+#
+# Ships empty on purpose: what counts as too-specific depends on the repo. An example of
+# the kind of entry that belongs here:
+#   <vendor> changed their dashboard layout

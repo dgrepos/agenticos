@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "files.eol": "\n",
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/.venv",
+  "editor.formatOnSave": false
+}

@@ -1,0 +1,39 @@
+# env & secrets
+.env
+.env.*
+!.env.example
+CLAUDE.local.md
+.claude/settings.local.json
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# node
+node_modules/
+dist/
+
+# playwright
+e2e/test-results/
+e2e/playwright-report/
+
+# os
+.DS_Store
+
+# scratch/staging folders (safe to trash)
+_to_delete*/
+
+# sqlite dev database
+app.db
+*.db-journal
+
+# local agent/session scratch (never publish)
+.remember/
+memory/sessions/*.log
+.agenticos/
+
+# diagram build output (regenerate with e2e/export-diagrams.mjs)
+.archify/
